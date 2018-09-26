@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTableViewCell" customModule="TestTableView" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WelcomeCell" rowHeight="50" id="3Ox-U8-gFq" customClass="WelcomeCell" customModule="TestTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ox-U8-gFq" id="RhB-vD-foA">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-3O-WxY">
+                        <rect key="frame" x="16" y="0.0" width="343" height="50"/>
+                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XM3-3O-WxY" firstAttribute="centerY" secondItem="RhB-vD-foA" secondAttribute="centerY" id="0BD-bq-u95"/>
+                    <constraint firstItem="XM3-3O-WxY" firstAttribute="trailing" secondItem="RhB-vD-foA" secondAttribute="trailingMargin" id="0Gq-6S-dsS"/>
+                    <constraint firstItem="XM3-3O-WxY" firstAttribute="top" secondItem="RhB-vD-foA" secondAttribute="top" id="8xr-M3-tbf"/>
+                    <constraint firstItem="XM3-3O-WxY" firstAttribute="leading" secondItem="RhB-vD-foA" secondAttribute="leadingMargin" id="yNI-N9-FW5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="welcomeLabel" destination="XM3-3O-WxY" id="F8R-It-42Z"/>
+            </connections>
+            <point key="canvasLocation" x="432.80000000000001" y="-311.24437781109447"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrLabel" id="h9Y-C2-bWI" customClass="WelcomeCell" customModule="TestTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h9Y-C2-bWI" id="kIx-0c-6G9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-OR-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-VY-k8q">
+                        <rect key="frame" x="16" y="11" width="343" height="22"/>
+                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="top" secondItem="kIx-0c-6G9" secondAttribute="topMargin" id="Sz4-HN-ofb"/>
+                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="leading" secondItem="kIx-0c-6G9" secondAttribute="leadingMargin" id="YRI-Fv-nRR"/>
+                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="bottom" secondItem="kIx-0c-6G9" secondAttribute="bottomMargin" id="YaS-LM-iVQ"/>
+                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="trailing" secondItem="kIx-0c-6G9" secondAttribute="trailingMargin" id="oFw-RR-njD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="429.60000000000002" y="-239.28035982008998"/>
+        </tableViewCell>
+    </objects>
+</document>
