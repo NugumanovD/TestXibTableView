@@ -13,6 +13,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
         tableView.allowsSelection = false
     }
     
@@ -33,6 +34,7 @@ class TableViewController: UITableViewController {
         case 1:
             let cell = Bundle.main.loadNibNamed("FaceBookLoginCell", owner: self, options: nil)?.first as! FaceBookLoginCell
             cell.backgroundColor = .clear
+
             
             return cell
             
@@ -45,8 +47,8 @@ class TableViewController: UITableViewController {
         case 3:
             let cell = Bundle.main.loadNibNamed("LoginPasswordCell", owner: self, options: nil)?.first as! LoginPasswordCell
             cell.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
-            cell.layer.cornerRadius = 15
-            cell.contentMode = .scaleAspectFill
+            cell.layer.cornerRadius = 0
+            
             cell.layer.masksToBounds = true
             cell.setupLoginCell()
             
@@ -82,15 +84,15 @@ class TableViewController: UITableViewController {
         case 0:
             return 120
         case 1:
-            return 80
+            return 70
         case 2:
-            return 100
+            return 85
         case 3:
-            return 80
+            return 85
         case 4:
-            return 80
+            return 85
         case 5:
-            return 80
+            return 120
         default:
             return 80
             

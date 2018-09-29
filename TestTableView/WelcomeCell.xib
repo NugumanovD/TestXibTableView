@@ -17,23 +17,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-3O-WxY">
-                        <rect key="frame" x="16" y="0.0" width="343" height="50"/>
-                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="19"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1T-nE-Sfw">
+                        <rect key="frame" x="0.0" y="10" width="375" height="39.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1v-ZM-Ycb">
+                                <rect key="frame" x="0.0" y="10" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="W1v-ZM-Ycb" secondAttribute="bottom" constant="3" id="1WE-ib-kdt"/>
+                            <constraint firstItem="W1v-ZM-Ycb" firstAttribute="leading" secondItem="X1T-nE-Sfw" secondAttribute="leading" id="A65-1T-Sd3"/>
+                            <constraint firstItem="W1v-ZM-Ycb" firstAttribute="top" secondItem="X1T-nE-Sfw" secondAttribute="top" constant="10" id="Ee7-0Y-Xq8"/>
+                            <constraint firstAttribute="trailing" secondItem="W1v-ZM-Ycb" secondAttribute="trailing" id="dTy-bu-sgw"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="XM3-3O-WxY" firstAttribute="centerY" secondItem="RhB-vD-foA" secondAttribute="centerY" id="0BD-bq-u95"/>
-                    <constraint firstItem="XM3-3O-WxY" firstAttribute="trailing" secondItem="RhB-vD-foA" secondAttribute="trailingMargin" id="0Gq-6S-dsS"/>
-                    <constraint firstItem="XM3-3O-WxY" firstAttribute="top" secondItem="RhB-vD-foA" secondAttribute="top" id="8xr-M3-tbf"/>
-                    <constraint firstItem="XM3-3O-WxY" firstAttribute="leading" secondItem="RhB-vD-foA" secondAttribute="leadingMargin" id="yNI-N9-FW5"/>
+                    <constraint firstItem="X1T-nE-Sfw" firstAttribute="leading" secondItem="RhB-vD-foA" secondAttribute="leading" id="CGZ-fl-wgC"/>
+                    <constraint firstAttribute="trailing" secondItem="X1T-nE-Sfw" secondAttribute="trailing" id="DUm-Ep-Hlm"/>
+                    <constraint firstItem="X1T-nE-Sfw" firstAttribute="top" secondItem="RhB-vD-foA" secondAttribute="top" constant="10" id="GCH-4f-yQ3"/>
+                    <constraint firstAttribute="bottom" secondItem="X1T-nE-Sfw" secondAttribute="bottom" id="VXt-23-B5s"/>
                 </constraints>
             </tableViewCellContentView>
-            <connections>
-                <outlet property="welcomeLabel" destination="XM3-3O-WxY" id="F8R-It-42Z"/>
-            </connections>
             <point key="canvasLocation" x="432.80000000000001" y="-311.24437781109447"/>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrLabel" id="h9Y-C2-bWI" customClass="WelcomeCell" customModule="TestTableView" customModuleProvider="target">
@@ -43,21 +53,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-OR-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-VY-k8q">
-                        <rect key="frame" x="16" y="11" width="343" height="22"/>
-                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="13"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="or" translatesAutoresizingMaskIntoConstraints="NO" id="Ldr-Wi-iMe">
+                        <rect key="frame" x="150" y="0.0" width="75" height="43.5"/>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="top" secondItem="kIx-0c-6G9" secondAttribute="topMargin" id="Sz4-HN-ofb"/>
-                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="leading" secondItem="kIx-0c-6G9" secondAttribute="leadingMargin" id="YRI-Fv-nRR"/>
-                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="bottom" secondItem="kIx-0c-6G9" secondAttribute="bottomMargin" id="YaS-LM-iVQ"/>
-                    <constraint firstItem="5Tq-VY-k8q" firstAttribute="trailing" secondItem="kIx-0c-6G9" secondAttribute="trailingMargin" id="oFw-RR-njD"/>
+                    <constraint firstAttribute="trailing" secondItem="Ldr-Wi-iMe" secondAttribute="trailing" constant="150" id="Qui-kX-UhY"/>
+                    <constraint firstItem="Ldr-Wi-iMe" firstAttribute="top" secondItem="kIx-0c-6G9" secondAttribute="top" id="sbn-eg-YHA"/>
+                    <constraint firstAttribute="bottom" secondItem="Ldr-Wi-iMe" secondAttribute="bottom" id="wP9-JV-sT1"/>
+                    <constraint firstItem="Ldr-Wi-iMe" firstAttribute="leading" secondItem="kIx-0c-6G9" secondAttribute="leading" constant="150" id="yfY-3q-NzL"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="429.60000000000002" y="-239.28035982008998"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="or" width="178" height="89"/>
+    </resources>
 </document>

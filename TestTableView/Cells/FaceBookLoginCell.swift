@@ -10,8 +10,9 @@ import UIKit
 
 class FaceBookLoginCell: UITableViewCell {
 
-    @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var labelFacebook: UILabel!
+    
+    @IBOutlet weak var facebookLoginView: UIView!
+    
     @IBOutlet weak var faceButton: UIButton!
     @IBOutlet weak var forgottenView: UIView!
     
@@ -21,6 +22,10 @@ class FaceBookLoginCell: UITableViewCell {
     }
     @IBAction func forgottenButtonAction(_ sender: UIButton) {
         print("Forgotten Password!")
+    }
+    
+    func setupLoginWithFacebook() {
+        facebookLoginView.backgroundColor = .clear
     }
     
     func setupForgottenCell() {

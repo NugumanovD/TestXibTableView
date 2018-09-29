@@ -21,7 +21,7 @@ class LoginPasswordCell: UITableViewCell {
     
     func setupLoginCell() {
         
-        loginView.layer.cornerRadius = 15
+        loginView.layer.cornerRadius = 5
         loginView.contentMode = .scaleAspectFill
         loginView.layer.masksToBounds = true
         loginImage.layer.cornerRadius = 5
@@ -30,7 +30,7 @@ class LoginPasswordCell: UITableViewCell {
     }
     
     func setupPaswwordCell() {
-        passwordView.layer.cornerRadius = 15
+        passwordView.layer.cornerRadius = 5
         passwordView.contentMode = .scaleAspectFill
         passwordView.layer.masksToBounds = true
         passwordImage.layer.cornerRadius = 5
