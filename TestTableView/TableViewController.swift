@@ -10,10 +10,14 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    @IBOutlet weak var loginBarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
+        loginBarButton.tintColor = .white
+        
         tableView.allowsSelection = false
     }
     
