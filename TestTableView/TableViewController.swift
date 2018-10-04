@@ -10,15 +10,35 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    @IBOutlet weak var loginBarButton: UIBarButtonItem!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
-        loginBarButton.tintColor = .white
-        
         tableView.allowsSelection = false
+        setupLoginButtonNavigationBar()
+        setupBackBarButton()
+    }
+    
+    func setupLoginButtonNavigationBar() {
+        let loginButton = UIButton.init(type: .system)
+        
+        loginButton.setTitle("LOGIN", for: .normal)
+        loginButton.setTitleColor(.white, for: .normal)
+        loginButton.frame = CGRect(x:0, y:0, width:80, height:34)
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        loginButton.alpha = 0.5
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: loginButton)
+    }
+    
+    func setupBackBarButton() {
+        let backButton = UIButton.init(type: .system)
+        let image = UIImage(named: "backButton")
+        backButton.setBackgroundImage(image!, for: .normal)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,7 +59,6 @@ class TableViewController: UITableViewController {
             let cell = Bundle.main.loadNibNamed("FaceBookLoginCell", owner: self, options: nil)?.first as! FaceBookLoginCell
             cell.backgroundColor = .clear
 
-            
             return cell
             
         case 2:
@@ -49,7 +68,7 @@ class TableViewController: UITableViewController {
             return cell
             
         case 3:
-            let cell = Bundle.main.loadNibNamed("LoginPasswordCell", owner: self, options: nil)?.first as! LoginPasswordCell
+            let cell = Bundle.main.loadNibNamed("LoginCell", owner: self, options: nil)?.first as! LoginPasswordCell
             cell.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
             cell.layer.cornerRadius = 0
             
@@ -57,8 +76,9 @@ class TableViewController: UITableViewController {
             cell.setupLoginCell()
             
             return cell
+            
         case 4:
-            let cell = Bundle.main.loadNibNamed("LoginPasswordCell", owner: self, options: nil)?[1] as! LoginPasswordCell
+            let cell = Bundle.main.loadNibNamed("PasswordCell", owner: self, options: nil)?.first as! LoginPasswordCell
             cell.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.6941176471, blue: 0.5803921569, alpha: 1)
             cell.layer.cornerRadius = 15
             cell.contentMode = .scaleAspectFill
@@ -68,10 +88,9 @@ class TableViewController: UITableViewController {
             return cell
         
         case 5:
-            let cell = Bundle.main.loadNibNamed("FaceBookLoginCell", owner: self, options: nil)?[1] as! FaceBookLoginCell
-            
+            let cell = Bundle.main.loadNibNamed("ForgotPassword", owner: self, options: nil)?.first as! ForgotPassword
+            cell.setupForgotCell()
             cell.backgroundColor = .clear
-            cell.setupForgottenCell()
             
             return cell
             

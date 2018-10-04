@@ -17,7 +17,10 @@
 		7B9202022157F1260043C29B /* WelcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9202002157F1260043C29B /* WelcomeCell.swift */; };
 		7B9202032157F1260043C29B /* WelcomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B9202012157F1260043C29B /* WelcomeCell.xib */; };
 		7BA306BC21598AB60038CC26 /* LoginPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA306BA21598AB60038CC26 /* LoginPasswordCell.swift */; };
-		7BA306BD21598AB60038CC26 /* LoginPasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA306BB21598AB60038CC26 /* LoginPasswordCell.xib */; };
+		7BA306BD21598AB60038CC26 /* LoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA306BB21598AB60038CC26 /* LoginCell.xib */; };
+		7BB972C72166146A005C5BB0 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB972C62166146A005C5BB0 /* ForgotPassword.swift */; };
+		7BB972C9216614A5005C5BB0 /* ForgotPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BB972C8216614A5005C5BB0 /* ForgotPassword.xib */; };
+		7BB972CC21664089005C5BB0 /* PasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BB972CB21664089005C5BB0 /* PasswordCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +36,10 @@
 		7B9202002157F1260043C29B /* WelcomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCell.swift; sourceTree = "<group>"; };
 		7B9202012157F1260043C29B /* WelcomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeCell.xib; sourceTree = "<group>"; };
 		7BA306BA21598AB60038CC26 /* LoginPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordCell.swift; sourceTree = "<group>"; };
-		7BA306BB21598AB60038CC26 /* LoginPasswordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPasswordCell.xib; sourceTree = "<group>"; };
+		7BA306BB21598AB60038CC26 /* LoginCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCell.xib; sourceTree = "<group>"; };
+		7BB972C62166146A005C5BB0 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		7BB972C8216614A5005C5BB0 /* ForgotPassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPassword.xib; sourceTree = "<group>"; };
+		7BB972CB21664089005C5BB0 /* PasswordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,9 @@
 		7B145893215916DE00F25AA6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7BA306B9215988D40038CC26 /* LoginPassword */,
+				7BB972C52166140F005C5BB0 /* ForgotPassword */,
+				7BA306B9215988D40038CC26 /* LoginTextField */,
+				7BB972CA2166405C005C5BB0 /* PasswordTextField */,
 				7BA306B821595F510038CC26 /* WithFacebook */,
 				7BA306B721595F3C0038CC26 /* Welcome */,
 			);
@@ -105,13 +113,30 @@
 			name = WithFacebook;
 			sourceTree = "<group>";
 		};
-		7BA306B9215988D40038CC26 /* LoginPassword */ = {
+		7BA306B9215988D40038CC26 /* LoginTextField */ = {
 			isa = PBXGroup;
 			children = (
 				7BA306BA21598AB60038CC26 /* LoginPasswordCell.swift */,
-				7BA306BB21598AB60038CC26 /* LoginPasswordCell.xib */,
+				7BA306BB21598AB60038CC26 /* LoginCell.xib */,
 			);
-			name = LoginPassword;
+			name = LoginTextField;
+			sourceTree = "<group>";
+		};
+		7BB972C52166140F005C5BB0 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				7BB972C62166146A005C5BB0 /* ForgotPassword.swift */,
+				7BB972C8216614A5005C5BB0 /* ForgotPassword.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		7BB972CA2166405C005C5BB0 /* PasswordTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7BB972CB21664089005C5BB0 /* PasswordCell.xib */,
+			);
+			name = PasswordTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA306BD21598AB60038CC26 /* LoginPasswordCell.xib in Resources */,
+				7BB972CC21664089005C5BB0 /* PasswordCell.xib in Resources */,
+				7BA306BD21598AB60038CC26 /* LoginCell.xib in Resources */,
 				7B9201F52157DAE40043C29B /* LaunchScreen.storyboard in Resources */,
 				7B1458972159184800F25AA6 /* FaceBookLoginCell.xib in Resources */,
 				7B9201F22157DAE40043C29B /* Assets.xcassets in Resources */,
+				7BB972C9216614A5005C5BB0 /* ForgotPassword.xib in Resources */,
 				7B9202032157F1260043C29B /* WelcomeCell.xib in Resources */,
 				7B9201F02157DAE20043C29B /* Main.storyboard in Resources */,
 			);
@@ -193,6 +220,7 @@
 				7B1458962159184800F25AA6 /* FaceBookLoginCell.swift in Sources */,
 				7B9201ED2157DAE20043C29B /* TableViewController.swift in Sources */,
 				7B9201EB2157DAE20043C29B /* AppDelegate.swift in Sources */,
+				7BB972C72166146A005C5BB0 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

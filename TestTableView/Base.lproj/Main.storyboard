@@ -31,13 +31,7 @@
                             <outlet property="delegate" destination="rFE-eL-JCG" id="86B-Nm-cSJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DRP-fG-ru6">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="yv9-Ou-qfP"/>
-                        <barButtonItem key="rightBarButtonItem" title="LOGIN" id="OjS-1v-DUe"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="loginBarButton" destination="OjS-1v-DUe" id="FQd-Ls-y5N"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="DRP-fG-ru6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPc-Sk-AcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
