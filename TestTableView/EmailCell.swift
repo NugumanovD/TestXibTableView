@@ -8,17 +8,12 @@
 
 import UIKit
 
-class LoginPasswordCell: UITableViewCell {
+class EmailCell: UITableViewCell {
     
     @IBOutlet weak var loginImage: UIImageView!
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordView: UIView!
-    @IBOutlet weak var passwordImage: UIImageView!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    
-    
+
     func setupLoginCell() {
         
         loginView.layer.cornerRadius = 5
@@ -28,14 +23,4 @@ class LoginPasswordCell: UITableViewCell {
         loginImage.contentMode = .scaleAspectFill
         loginImage.layer.masksToBounds = true
     }
-    
-    func setupPaswwordCell() {
-        passwordView.layer.cornerRadius = 5
-        passwordView.contentMode = .scaleAspectFill
-        passwordView.layer.masksToBounds = true
-        passwordImage.layer.cornerRadius = 5
-        passwordImage.contentMode = .scaleAspectFill
-        passwordImage.layer.masksToBounds = true
-    }
-    
 }

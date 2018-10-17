@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTableViewCell" customModule="TestTableView" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WelcomeCell" rowHeight="50" id="3Ox-U8-gFq" customClass="WelcomeCell" customModule="TestTableView" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="3Ox-U8-gFq" customClass="WelcomeCell" customModule="TestTableView" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ox-U8-gFq" id="RhB-vD-foA">
@@ -46,28 +46,5 @@
             </tableViewCellContentView>
             <point key="canvasLocation" x="432.80000000000001" y="-311.24437781109447"/>
         </tableViewCell>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrLabel" id="h9Y-C2-bWI" customClass="WelcomeCell" customModule="TestTableView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h9Y-C2-bWI" id="kIx-0c-6G9">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="or" translatesAutoresizingMaskIntoConstraints="NO" id="Ldr-Wi-iMe">
-                        <rect key="frame" x="150" y="0.0" width="75" height="43.5"/>
-                    </imageView>
-                </subviews>
-                <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Ldr-Wi-iMe" secondAttribute="trailing" constant="150" id="Qui-kX-UhY"/>
-                    <constraint firstItem="Ldr-Wi-iMe" firstAttribute="top" secondItem="kIx-0c-6G9" secondAttribute="top" id="sbn-eg-YHA"/>
-                    <constraint firstAttribute="bottom" secondItem="Ldr-Wi-iMe" secondAttribute="bottom" id="wP9-JV-sT1"/>
-                    <constraint firstItem="Ldr-Wi-iMe" firstAttribute="leading" secondItem="kIx-0c-6G9" secondAttribute="leading" constant="150" id="yfY-3q-NzL"/>
-                </constraints>
-            </tableViewCellContentView>
-            <point key="canvasLocation" x="429.60000000000002" y="-239.28035982008998"/>
-        </tableViewCell>
     </objects>
-    <resources>
-        <image name="or" width="178" height="89"/>
-    </resources>
 </document>

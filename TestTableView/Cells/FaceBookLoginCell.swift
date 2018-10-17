@@ -13,10 +13,13 @@ class FaceBookLoginCell: UITableViewCell {
     @IBOutlet weak var facebookLoginView: UIView!
     @IBOutlet weak var faceButton: UIButton!
     
+    
+    
     @IBAction func facebookButtonAction(_ sender: UIButton) {
         
         print("Facebook Login")
     }
+    
     func setupLoginWithFacebook() {
         facebookLoginView.backgroundColor = .clear
     }
