@@ -39,7 +39,12 @@ class TableViewController: UITableViewController {
         let backButton = UIButton.init(type: .system)
         let image = UIImage(named: "backButton")
         backButton.setBackgroundImage(image!, for: .normal)
+        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+    
+    func inset() {
+        
     }
     
     func registerCell() {
